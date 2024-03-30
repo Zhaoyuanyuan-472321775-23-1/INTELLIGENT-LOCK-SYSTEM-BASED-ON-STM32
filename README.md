@@ -12,6 +12,7 @@
 
 上述身份信息经过采集之后将实时传输到STM32处理器进行数据的处理与信息的比对，身份信息比对成功后系统方可开锁。
 ## 智能锁系统开机示意图
+![image](https://github.com/zyysin/INTELLIGENT-LOCK-SYSTEM-BASED-ON-STM32/blob/main/img/472321775.png)
 
 ## 系统硬件选型
 STM32F103C8T6
@@ -31,40 +32,20 @@ Maix Py IDE
 PZ-ISP
 
 Kflash
-# 目录结构描述
-    ├── ReadMe.md           // 帮助文档
-    
-    ├── AutoCreateDDS.py    // 合成DDS的 python脚本文件
-    
-    ├── DDScore             // DDS核心文件库，包含各版本的include、src、lib文件夹，方便合并
-    
-    │   ├── include_src     // 包含各版本的include、src文件夹
-    
-    │       ├── V1.0
-    
-    │           ├── include
-    
-    │           └── src
-    
-    │       └── V......
-    
-    │   └── lib             // 包含各版本的lib文件夹
-    
-    │       ├── arm64       // 支持arm64系统版本的lib文件夹
-    
-    │           ├── V1.0
-    
-    │           └── V......
-    
-    │       └── x86         // 支持x86系统版本的lib文件夹
-    
-    │           ├── V1.0
-    
-    │           └── V......
-    
-    ├── target              // 合成结果存放的文件夹
-    
-    └── temp                // 存放待合并的服务的服务文件夹
- 
+##  系统各部件连接完成的实机图
+![image](https://github.com/zyysin/INTELLIGENT-LOCK-SYSTEM-BASED-ON-STM32/blob/main/img/sys.PNG)
 
- 
+## 目录结构描述
+    ├── ReadMe.md          // 帮助文档
+    
+    ├── CORE              // 合成DDS的 python脚本文件
+    
+    ├── HARDWAR           // DDS核心文件库，包含各版本的include、src、lib文件夹，方便合并
+    
+    ├── OBJ               // 包含各版本的include、src文件夹
+    
+    ├── SYSTEM            // 包含各版本的lib文件夹
+    
+    ├── USER              // 支持arm64系统版本的lib文件夹
+    
+    └── USER              // 支持arm64系统版本的lib文件夹temp                
