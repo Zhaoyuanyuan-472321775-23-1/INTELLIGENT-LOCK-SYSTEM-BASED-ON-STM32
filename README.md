@@ -33,7 +33,7 @@ PZ-ISP
 
 Kflash
 ##  系统各部件连接完成的实机图
-.<div align=center><img src="https://github.com/zyysin/INTELLIGENT-LOCK-SYSTEM-BASED-ON-STM32/blob/main/img/sys.PNG" width="300" height="300" /></div>
+.<div align=center><img src="https://github.com/zyysin/INTELLIGENT-LOCK-SYSTEM-BASED-ON-STM32/blob/main/img/sys.PNG" width="450" height="400" /></div>
 ![image](https://github.com/zyysin/INTELLIGENT-LOCK-SYSTEM-BASED-ON-STM32/blob/main/img/sys.PNG)
 
 ## 目录结构描述
