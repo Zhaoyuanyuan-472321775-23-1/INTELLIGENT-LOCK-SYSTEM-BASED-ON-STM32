@@ -1,6 +1,7 @@
 # 基于STM32的智能锁系统
 ## 智能锁系统开机示意图
 <div ><img src="https://github.com/zyysin/INTELLIGENT-LOCK-SYSTEM-BASED-ON-STM32/blob/main/img/472321775.png" width="400" height="400" /></div>
+
 ## 系统功能简介
 随着当今科技的迅猛发展，传统的身份识别方式因其拥有与用户身份的可分离性，已经不能够满足现代社会的需求。
 
