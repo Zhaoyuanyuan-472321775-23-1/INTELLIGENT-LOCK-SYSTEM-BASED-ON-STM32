@@ -1,4 +1,7 @@
 # 基于STM32的智能锁系统
+## 智能锁系统开机示意图
+![image](https://github.com/zyysin/INTELLIGENT-LOCK-SYSTEM-BASED-ON-STM32/blob/main/img/472321775.png)
+.<div ><img src="https://github.com/zyysin/INTELLIGENT-LOCK-SYSTEM-BASED-ON-STM32/blob/main/img/472321775.png" width="400" height="400" /></div>
 ## 系统功能简介
 随着当今科技的迅猛发展，传统的身份识别方式因其拥有与用户身份的可分离性，已经不能够满足现代社会的需求。
 
@@ -11,8 +14,15 @@
 通过指纹识别模块采集指纹信息，并采用矩阵键盘进行密码信息的采集工作。
 
 上述身份信息经过采集之后将实时传输到STM32处理器进行数据的处理与信息的比对，身份信息比对成功后系统方可开锁。
-## 智能锁系统开机示意图
-![image](https://github.com/zyysin/INTELLIGENT-LOCK-SYSTEM-BASED-ON-STM32/blob/main/img/472321775.png)
+
+## 系统软件安装版本
+KeiluVision5
+
+Maix Py IDE
+
+PZ-ISP
+
+Kflash
 
 ## 系统硬件选型
 STM32F103C8T6
@@ -24,27 +34,18 @@ ATK-AS608
 4×4的薄膜矩阵键盘
 
 Risym的1路5V继电器
-## 系统软件安装版本
-KeiluVision5
-
-Maix Py IDE
-
-PZ-ISP
-
-Kflash
 ##  系统各部件连接完成的实机图
-.<div align=center><img src="https://github.com/zyysin/INTELLIGENT-LOCK-SYSTEM-BASED-ON-STM32/blob/main/img/sys.PNG" width="450" height="400" /></div>
-![image](https://github.com/zyysin/INTELLIGENT-LOCK-SYSTEM-BASED-ON-STM32/blob/main/img/sys.PNG)
+.<div ><img src="https://github.com/zyysin/INTELLIGENT-LOCK-SYSTEM-BASED-ON-STM32/blob/main/img/sys.PNG" width="450" height="400" /></div>
 
 ## 目录结构描述
     ├── ReadMe.md          // 帮助文档
     
-    ├── CORE              // 合成DDS的 python脚本文件
+    ├── CORE              // 内核支持API，提供了汇编级函数的实现
     
-    ├── HARDWAR           // DDS核心文件库，包含各版本的include、src、lib文件夹，方便合并
+    ├── HARDWAR           // 包括编译硬件的代码文件
     
-    ├── OBJ               // 包含各版本的include、src文件夹
+    ├── OBJ               // 包括程序编译成功之后生成的hex文件
     
-    ├── SYSTEM            // 包含各版本的lib文件夹
+    ├── SYSTEM            // 包括中断，延时与同步异步收发功能的代码文件
     
-    └── USER              // 支持arm64系统版本的lib文件夹temp                
+    └── USER              // 包括将各硬件进行连接的代码文件               
