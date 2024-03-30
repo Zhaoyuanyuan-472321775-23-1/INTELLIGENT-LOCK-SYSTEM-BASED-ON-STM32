@@ -33,6 +33,7 @@ PZ-ISP
 
 Kflash
 ##  系统各部件连接完成的实机图
+.<div align=center><img src="https://github.com/zyysin/INTELLIGENT-LOCK-SYSTEM-BASED-ON-STM32/blob/main/img/sys.PNG" width="300" height="450" /></div>
 ![image](https://github.com/zyysin/INTELLIGENT-LOCK-SYSTEM-BASED-ON-STM32/blob/main/img/sys.PNG)
 
 ## 目录结构描述
@@ -45,7 +46,5 @@ Kflash
     ├── OBJ               // 包含各版本的include、src文件夹
     
     ├── SYSTEM            // 包含各版本的lib文件夹
-    
-    ├── USER              // 支持arm64系统版本的lib文件夹
     
     └── USER              // 支持arm64系统版本的lib文件夹temp                
